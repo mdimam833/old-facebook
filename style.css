@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* common css star */
+.container{
+    flex-basis: 95%;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.line {
+	border-top: 2px solid #cbd4e5;
+	margin: 7px 0 13px;
+}
+.w-30 {
+    flex-basis: 30%;
+    text-align: right;
+}
+.w-70 {
+    flex-basis: 68%;
+}
+/* common css end */
+
+/* header css star */
+header {
+    background: #3b5999;
+    display: flex;
+    justify-content: center;
+}
+
+header .row .logo {
+    margin-top: 17px;
+}
+header .row .form{
+    flex-basis: 40%;
+}
+header .row form {
+    display: flex;
+    color: #FFF;
+    justify-content: space-evenly;
+}
+header .row form .email > * {
+    display: block;
+}
+header .row form .email{
+    flex-basis: 33%;
+    line-height: 30px;
+}
+header .row form .email input[type="checkbox"],
+header .row form .email :nth-child(4) {
+    display: inline-block;
+    color: #8ea1c8;
+}
+header .row form .password > * {
+    display: block;
+}
+header .row form .password{
+    flex-basis: 33%;
+    line-height: 30px;
+}
+header .row form .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 10%;
+}
+header .row form .password .bth-for {
+    text-decoration: none;
+    color: #8ea1c8; 
+}
+header .row form .password .bth-for:hover{
+    text-decoration: underline;
+}
+header .row form input[type="text"],
+header .row form input[type="password"] {
+	width: 100%;
+	outline: none;
+	box-sizing: border-box;
+	border: 1px solid black;
+	padding: 3px 5px;
+}
+header .row form .login input[type="submit"] {
+	border: 2px solid #1c366f;
+	padding: 4px 9px;
+    background:#637bab;
+    color: #FFF;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    transition: .5s;
+}
+header .row form .login input[type="submit"]:hover {
+    background: #1c366f ;
+    border: 2px solid #3b5999;
+}
+
+
+/* header css end */
+
+/* main css star */
+
+main {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(#FFF,#dee2ee);
+    padding: 95px 0 50px;
+}
+main .facebook-help h2 {
+    font-weight: lighter;
+    font-size: 27px;
+    color: #1e3a5d;
+    line-height: 28px;
+}
+main .facebook-help img {
+	width: 100%;
+	height: 244px;
+	margin: 40px;
+}
+main .signup {
+	flex-basis: 36%;
+}
+main .signup .signup-connet {
+	line-height: 28px;
+}
+main .signup .signup-connet h2 {
+    font-size: 27px;
+    color: #1e3a5d;
+}
+main .signup .signup-connet p {
+    color: #2b527b;
+}
+main .signup .signup-form {
+    color: #2b527b;
+    font-size: 17px;
+}
+main .signup .signup-form .item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+main .signup .signup-form input[type="text"], 
+main .signup .signup-form input[type="email"], 
+main .signup .signup-form input[type="password"] {
+	width: 100%;
+	outline: none;
+    border: 2px solid #cbd4e5;
+	box-sizing: border-box;
+    padding: 6px 4px;
+}
+main .signup .signup-form select {
+    border: 2px solid #cbd4e5;
+    padding: 7px 0;
+    margin-right: 5px;
+}
+main .signup .signup-form .sign-link a{
+    display: block;
+    font-size: 12px;
+    text-decoration: none;
+    color: #2b527b;
+    margin: 10px 0 auto;
+    transition: .5s;
+}
+main .signup .signup-form .sign-link a:hover {
+    text-decoration: underline;
+}
+main .signup .signup-form .sign-link .sing {
+    display: inline-block;
+    background: green ;
+    color: #FFF;
+    font-size: 18px;
+    padding: 5px 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    transition: .5s;
+}
+main .signup .signup-form .sign-link .sing:hover{
+    text-decoration: none;
+    background: rgb(8, 85, 8) ;
+}
+main .signup .page {
+    text-align: center;
+}
+main .signup .page a {
+    color: #2b527b;
+    text-decoration: none;
+}
+main .signup .page a:hover {
+    text-decoration: underline;
+}
+/* main css end */
+
+/* footer css star */
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+footer .link-header {
+    margin-bottom: 18px;
+}
+footer .link-header ul {
+    list-style: none;
+    display: flex;
+}
+footer .link-header ul li {
+    margin-right: 10px; 
+    color: #2b527b;
+    font-size: 14px;
+}
+footer .link-header ul li a{
+    text-decoration: none;
+    color: #2b527b;
+}
+footer .link-header ul li a:hover {
+    text-decoration: underline;
+}
+footer .copy {
+    color: #999ea3;
+    font-size: 14px;
+}
+footer .copy a {
+    color: #2b527b;
+    text-decoration: none;
+}
+footer .link ul {
+    display: flex;
+    list-style: none;
+}
+footer .link ul li {
+    font-size: 14px;
+    margin-left: 25px;
+}
+footer .link ul li a{
+    color: #2b527b;
+    text-decoration: none;
+}
+footer .link ul li a:hover {
+    text-decoration: underline;
+}
+/* footer css end */
